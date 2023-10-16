@@ -5,7 +5,7 @@
             "packager": "cordova",
             "cordova" : {
                 "config": {
-                    "platforms": "ios android"
+                    "platforms": "browser"
 
                     // Name and ID properties are only used during app creation
                     // edit this if you are recreating your cordova app

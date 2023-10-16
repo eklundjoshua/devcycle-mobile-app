@@ -1,0 +1,8 @@
+podman machine start
+podman run -d -p 8080:80 ubuntu-dev
+podman exec -it HASHFROMPODMANPS /bin/bash
+podman run -ti --rm ubuntu-dev /bin/bash
+
+./tmp/SenchaCmd-6.0.2.14-linux-amd64.sh
+/root/bin/Sencha/Cmd/6.0.2.14/sencha cordova init edu.rit.se.tourtrak TourTrak
+python2 fetchPlugins.py

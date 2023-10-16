@@ -348,3 +348,12 @@ Some libraries were used to develop this application:
 [leaflet-usermarker]: https://github.com/heyman/leaflet-usermarker
 [native-build-line]: https://github.com/TourTrak/devcycle-mobile-app/blob/master/app.json#L8
 [splash]: https://github.com/TourTrak/tourtrak-android-plugin/blob/master/src/edu/rit/se/TourTrakAndroidPlugin.java#L32
+
+# Latest Updates October 2023
+- Must install Podman
+- To start the podman daemon, run `podman machine start`
+- In the root of the repo, run `podman build --tag ubuntu-dev .`
+- `podman run -p 8080:8000 -it --rm ubuntu-dev /bin/bash`
+- In the container cd to /app
+- Run ./run.sh
+- Open a browser window and go to localhost:8080 to see the app
